@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Learn_more {
+  @apply uppercase relative decoration-4 text-Very_dark_desaturated_blue px-2  font-Fraunces font-extrabold;
+}
+.Learn_more::before {
+  content: "";
+  @apply absolute w-full h-2 -z-10   bottom-[2px] left-0  rounded-full;
+}
+.TransformAStand {
+  @apply flex flex-col  items-center md:items-start gap-6 md:gap-10 px-4 my-10 md:my-0 lg:my-10;
+}
+.TransformAStand > h2 {
+  @apply md:w-[350px] text-4xl font-Fraunces text-center md:text-left text-Very_dark_desaturated_blue font-extrabold;
+}
+.TransformAStand > p {
+  @apply text-center md:text-left text-Dark_grayish_blue font-semibold font-Barlow;
+}
+.GraphicAPhotography {
+  @apply md:w-1/2  h-[600px] gap-8 relative flex flex-col justify-end;
+}
+.GraphicAPhotography h2 {
+  @apply text-4xl font-Fraunces text-center  font-extrabold;
+}
+.GraphicAPhotography p {
+  @apply mb-16 font-extrabold font-Barlow  text-center px-4 text-base;
+}
+.Client {
+  @apply flex flex-col gap-6 text-center items-center;
+}
+.Client > img {
+  @apply w-[80px] h-[80px] rounded-full;
+}
+.Client .text {
+  @apply text-Very_dark_desaturated_blue font-Barlow;
+}
+.name {
+  @apply font-extrabold font-Fraunces;
+}
+.work {
+  @apply text-Grayish_blue;
+}
+.contact .change {
+  @apply fill-[#2C7566];
+}
+.contact div {
+  @apply cursor-pointer;
+}
+.contact div:hover .change {
+  @apply !fill-white;
+}
+.footer * {
+  @apply hover:text-white cursor-pointer;
+}
+.myafter {
+  @apply absolute border-[30px] opacity-0 transition-all border-white top-[52px] right-[-29.5px] border-y-transparent border-r-transparent  rotate-45 md:hidden;
+}
