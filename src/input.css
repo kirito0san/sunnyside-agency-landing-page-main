@@ -57,5 +57,5 @@
   @apply hover:text-white cursor-pointer;
 }
 .myafter {
-  @apply absolute border-[30px] opacity-0 transition-all border-white top-[52px] right-[-29.5px] border-y-transparent border-r-transparent  rotate-45 md:hidden;
+  @apply absolute border-[30px] opacity-0 transition-all border-white top-[52px] right-[-4.5px] border-y-transparent border-r-transparent  rotate-45 md:hidden;
 }
